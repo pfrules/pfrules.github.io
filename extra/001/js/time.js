@@ -1,8 +1,8 @@
 ﻿function showTime() { 
 	var currentDate = new Date(); 
-	var startDate = new Date(2014, 01, 01);
+	var startDate = new Date(2019,8,8,0,0,0,0);
 	var date3 = currentDate-startDate;
-	var days=Math.floor(date3/(24*3600*1000));
+	var days=Math.floor(date3/(24*3600*1000))+32;
 	var leave1=date3%(24*3600*1000);     //计算天数后剩余的毫秒数
 	var hours=Math.floor(leave1/(3600*1000));
 	var leave2=leave1%(3600*1000);        //计算小时数后剩余的毫秒数
@@ -22,7 +22,7 @@
 		+"<c style=\"color: #CCFF99; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:24px\" >" +seconds+" </c>sec<br>"
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp只愿执子之手,与子偕老.<br>"
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"
-		+	"<c style=\"color: #CCCCCC; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:20px\" >----51bbw.cn   2014-01-01</c>"; 
+		+	"<c style=\"color: #CCCCCC; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:20px\" >----飞哥   2019-08-07</c>"; 
 	document.getElementById("show").innerHTML=currentTimeString;  //改这地方
 	window.setTimeout("showTime()", 1000); 
 } 
